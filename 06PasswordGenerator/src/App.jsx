@@ -22,6 +22,8 @@ function App() {
     setPassword(pass);
   }, [lenght, numberAllowed, charAllowed, setPassword]);
 
+
+  //  use for copy pasword form text box 
    const copyPasswordToClipoard = useCallback (() => {
      passwordRef.current?.select();
       //! we can select how many characters we want to copy from the clipboard using setSelectionRange();
@@ -29,6 +31,8 @@ function App() {
         window.navigator.clipboard.writeText(password)
 
    }, [password])
+
+  //  useEffect hook use for 
   useEffect(() => {
     passwordGenerator();
   }, [lenght, numberAllowed, charAllowed, passwordGenerator]);
