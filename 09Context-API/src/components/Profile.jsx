@@ -8,7 +8,7 @@ function Profile() {
       
     </div>
   );
-  return <div>Welecome {user.username   } {user.password} </div>
+  return <div>Welecome {user.username   } {user.password} {user.name} </div> 
 }
 
 export default Profile;
